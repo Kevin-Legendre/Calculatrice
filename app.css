@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #FAEBD7;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    color: #343434;
+    text-align: center;
+    margin: 50px;
+}
+
+.container {
+    max-width: 400px;
+    padding: 30px;
+    margin: 0 auto;
+}
+
+.calc {
+    background-color: #224666;
+    padding: 12px 15px;
+    border-radius: 8px;
+    margin: 0 auto;
+}
+
+.display {
+    margin-bottom: 30px;
+    background-color: #BDBDBD;
+    border-radius: 5px;
+    font-family: 'Arial', sans-serif;
+}
+
+.result {
+    text-align: right;
+    margin-bottom: 10px;
+    padding: 10px 10px;
+    height: 18px;
+}
+
+.result-hidden {
+    display: none;
+}
+
+.input input {
+    text-align: right;
+    width: 100%;
+    font-size: 20px;
+    border:none;
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 3px 5px;
+}
+
+.input input:focus {
+    border-color:#808080;
+    outline:none
+}
+
+.btn {
+    width: 55px;
+    height: 30px;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    border-radius:3px;
+    color: #ffffff;
+    background: #5CC3E1;
+    cursor: pointer;
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+}
+
+.button-wrap {
+    display: grid;
+    grid-template: 
+            "num7 num8 num9 c remove"
+            "num4 num5 num6 mult div"
+            "num1 num2 num3 moins equ"
+            "num0 num0 point plus equ"
+        ;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.btn-1 {
+    grid-area: num1;
+}    
+.btn-2 {
+    grid-area: num2;
+}    
+.btn-3 {
+    grid-area: num3;
+}    
+.btn-4 {
+    grid-area: num4;
+}    
+.btn-5 {
+    grid-area: num5;
+}    
+.btn-6 {
+    grid-area: num6;
+}    
+.btn-7 {
+    grid-area: num7;
+}    
+.btn-8 {
+    grid-area: num8;
+}    
+.btn-9 {
+    grid-area: num9;
+}    
+.btn-0 {
+    grid-area: num0;
+    width: 115px;
+}    
+.btn-equ {
+    grid-area: equ;
+    height: 65px;
+    line-height: 65px;
+    background-color: #5CB85C;
+}    
+.btn-plus {
+    grid-area: plus;
+}    
+.btn-moins {
+    grid-area: moins;
+}    
+.btn.btn-div {
+    grid-area: div;
+}    
+.btn.btn-mult {
+    grid-area:mult;
+}    
+.btn.btn-point {
+    grid-area: point;
+}    
+.btn.btn-c {
+    grid-area: c;
+    background-color: #DC5452;
+}    
+.btn.btn-remove {
+    grid-area: remove;
+    background-color: #DC5452;
+} 
+
+.sign {
+    background-color: #F0AE4C;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 30px 10px;
+        margin: 0 auto;
+    }
+    .calc {
+        width: 340px;
+    }
+} 
+
+/*BUTTON BACK*/
+
+
+.btn-back {
+    padding: .7rem .8rem;
+    border-radius: .25rem;
+    position: fixed;
+    bottom: 30px;
+    left: 15px;
+    
+    background-color: #0155A9;
+}
+
+.btn-back a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size:1.2rem;
+}
+
+a:hover {
+    text-decoration: underline;
+}
